@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: monospace;
+    background-color: #0E2249; /* Color de fondo */
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 30px;
+    text-align: center;
+    background-color: #B21B1B;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Sección de definición del podcast */
+#definicion {
+    font-size: 20px;
+    text-align: justify;
+    background-color: #163061;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajustamos el ancho a 90% para centrar el contenido */
+    max-width: 1200px; /* Limitar el ancho máximo en pantallas grandes */
+}
+
+/* Episodios */
+#episodios {
+    background-color: #163061;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+#episodios h1 {
+    font-size: 28px;
+}
+
+#episodios h2 {
+    font-size: 36px;
+}
+
+/* Estilo para el nuevo episodio */
+#nuevo {
+    font-size: 20px;
+    text-align: center;
+    background-color: #21478F;
+    padding: 20px;
+    margin: 0 auto 20px auto; /* Ajusta márgenes para que esté centrado */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Haz que el recuadro ocupe el 100% del ancho de su contenedor */
+    max-width: 760px; /* Limita el ancho máximo para evitar que se salga */
+    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+}
+/* Media Queries: estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+
+    #definicion, #episodios {
+        margin: 10px auto;
+        padding: 15px;
+        width: 95%; /* Para pantallas pequeñas, usamos 95% del ancho */
+    }
+
+    #episodios h1, #episodios h2 {
+        font-size: 24px;
+    }
+
+    #nuevo {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+
+    #episodios h1, #episodios h2 {
+        font-size: 20px;
+    }
+
+    #nuevo {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
